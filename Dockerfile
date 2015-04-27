@@ -7,6 +7,6 @@ VOLUME /scripts
 ENV GOPATH=/go
 
 RUN yum install -y epel-release && \
-    yum install -y git go python && \
+    yum install -y git go python python-yaml && \
     yum clean all && \
     go get github.com/stretchr/testify/require github.com/stretchr/testify/assert
